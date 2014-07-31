@@ -1,74 +1,346 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Longlc.github.io : Chim Non's Github Page" />
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js no-touch" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+  
 
-    <title>Longlc.github.io</title>
-  </head>
+  <title>Le Cong Long</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/tooltipster.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!--[if IE 8]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
 
-  <body>
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/longlc">View on GitHub</a>
+</head>
+<body>
+	<a id="home-nav"></a>
+	<div class="navi" data-magellan-expedition>
+						<ul >
+						  <li data-magellan-arrival='home' class="hasatip" data-width="210" title="Home"><a href="index.html#home-nav" class="scroll"><i class="icon-home"></i></a></li>
+						  <li data-magellan-arrival='profile' class="hasatip" data-width="210" title="Profile"><a href="index.html#profile-nav" class="scroll"><i class="icon-user"></i></a></li>
+						  <li data-magellan-arrival='resume' class="hasatip" data-width="210" title="Resume"><a href="index.html#resume-nav" class="scroll"><i class="icon-reorder"></i></a></li>
+						  <li data-magellan-arrival='contact' class="hasatip" data-width="210" title="Contact"><a href="index.html#contact-nav" class="scroll"><i class="icon-envelope"></i></a></li>						  
+						</ul>
+    				</div>
+  <div class="row">
+    <div class="twelve columns" id="main-container">
 
-          <h1 id="project_title">Longlc.github.io</h1>
-          <h2 id="project_tagline">Chim Non's Github Page</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    	<section class="row" id="home">
     
+    			<div class="five columns home-left">
+    				<div id="home-photo"></div>
+    			</div>
+    			
+    			<div class="seven columns home-right">
+    				<div id="home-text">
+						<div id="home-social-container">
+							<ul id="home-social">
+								<li><a target="_blank" href="http://facebook.com/leconglong"><i class="icon-facebook"></i></a></li>
+							</ul>
+						</div>
+    					<h3 class="bold" >LE CONG LONG</h3>
+    					<h4 >Software Engineer</h4>
+    					<hr class="highlight-hr" />
+    					<h5 class="text-left"><i class="icon-envelope">&nbsp;</i>long@leconglong.com</h5>
+    					<h5 class="text-left"><i class="icon-facebook">&nbsp;</i>leconglong</h5>
+    				</div>
+    				
+    			</div>
+    		
+    		
+    	</section><!-- end of Home -->
+    	  
+		 	
+    	<a id="profile-nav">&nbsp;</a>
+    	<section class="row page" id="profile" data-magellan-destination='profile'>
+    	
+    		<div class="twelve columns">
+    			<h5 class="page-heading">PROFILE</h5>
+    			<hr />
+    		</div>
+    		
+    		<div class="twelve columns">
+    		
+    			<div class="six columns">
+    				<h4>
+    					I'm a truly dynamic software engineer with next-level ideas on webs & mobile apps UX.
+    				</h4>
+    				<hr />
+    				<p>
+    					My career objective is trying to gain success in building, developing, researching and managing Software Development and R&D projects which take great benefits and high economic efficiency.
+                        <br/><br/>
+                        I love to create new and useful ideas for improving User Experiences and Usability of software applications and websites. My favorite working environment is an international, dynamic, and challenging enterprise with nice colleagues.
+    				</p>	
+    			</div>
+    			
+    			<div class="six columns">
+    			
+					<ul id="skill">
+						<li><span class="bar architectural-design"></span><h5>Software Architectural Design</h5></li>
+						<li><span class="bar web-dev"></span><h5>Web Applications Development</h5></li>
+						<li><span class="bar mobile-dev"></span><h5>Mobile Applications Development</h5></li>
+						<li><span class="bar ux"></span><h5>UX Design</h5></li>
+                        <li><span class="bar team-lead"></span><h5>Team Lead & Project Management</h5></li>
+					</ul>
+    			
+    			</div>
+    		</div>
+    		
+    	</section><!-- end of Profile -->
+    	
+    	<a id="resume-nav"></a>
+    	
+    	<section class="row divider text-center">
+    			<div class="row">
+    				<div class="twelve columns snapshot-timeline">
+    					<div class="three columns">
+    						<i class="icon-circle timeline-circle"></i>
+    					</div>
+    					
+    					<div class="three columns">
+    						<i class="icon-circle timeline-circle"></i>
+    					</div>
+    					
+    					<div class="three columns">
+    						<i class="icon-circle timeline-circle"></i>
+    					</div>
+    					
+    					<div class="three columns">
+    						<i class="icon-circle timeline-circle"></i>
+    					</div>
+    				</div>
+    			</div>
+    			
+    			<div class="three columns text-center snapshot">
+    				<h3>2011</h3>
+    				<h4 class="bold">Graduated with honors</h4>
+    				<h4><i class="icon-certificate"></i></h4>
+    			</div>
+    			
+    			<div class="three columns text-center snapshot">
+    				<h3>2012</h3>
+    				<h4 class="bold">Software Developer</h4>
+    				<h4><i class="icon-briefcase"></i></h4>
+    			</div>
+    			
+    			<div class="three columns text-center snapshot">
+    				<h3>2013</h3>
+    				<h4 class="bold">Software Engineer</h4>
+    				<h4><i class="icon-briefcase"></i></h4>
+    			</div>
+    			
+    			<div class="three columns text-center snapshot">
+    				<h3>2014</h3>
+    				<h4 class="bold">Technical Lead</h4>
+    				<h4><i class="icon-trophy"></i></h4>
+    			</div>
+    	</section>
+    	
+    	
+    	
+    	<section class="row page" id="resume">
+    	
+    	
+    		<div class="twelve columns">
+    			<h5 class="page-heading">RESUMÉ</h5>
+    			<hr />
+    		</div>
+    		
+    		<div class="twelve columns timeline-section">
+    			<div class="three columns">
+    				<h6>EMPLOYMENT</h6>
+    				<div class="resume-large-icon hide-for-small">
+    					<i class="icon-briefcase"></i>
+    				</div>
+    			</div>
+    			
+					<div class="nine columns resume-entry">
+						<div class="nine columns">
+							<span class="resume-title"><i class="icon-user">&nbsp;</i>Technical Lead</span><br />
+							<span class="resume-company"><i class="icon-building">&nbsp;</i>Moca</span><br />
+							<br />
+							<ul>
+								<li><i class="icon-caret-right">&nbsp;</i>Leading Applications Development Team</li>
+								<li><i class="icon-caret-right">&nbsp;</i>Managing & monitoring software development projects</li>
+								<li><i class="icon-caret-right">&nbsp;</i>Designing & improving software architecture including webs & mobile apps</li>
+								<li><i class="icon-caret-right"></i>Have a lot of fun</li>
+							</ul>
+						</div>
+						
+						<div class="three columns text-right">
+							2013 - Present
+						</div>
+						
+					</div>
+					
+					<div class="nine columns resume-entry">
+						<div class="nine columns right">
+							<span class="resume-title"><i class="icon-user">&nbsp;</i>Software Developer</span><br />
+							<span class="resume-company"><i class="icon-building">&nbsp;</i>Vietnam Maritime Joint Stock Bank</span><br />
+							<br />
+							<ul>
+								<li><i class="icon-caret-right">&nbsp;</i>Designing web application architecture</li>
+								<li><i class="icon-caret-right">&nbsp;</i>Managing web application development projects</li>
+								<li><i class="icon-caret-right">&nbsp;</i>Developing web applications</li>
+								<li><i class="icon-caret-right">&nbsp;</i>Contributing creative ideas</li>
+							</ul>
+						</div>
+						
+						<div class="three columns text-right">
+							2012 - 2013
+						</div>
+						
+					</div>
+    			
+    			
+			<hr />
+    		</div>
+    		
 
-  </body>
+    		
+    		<div class="twelve columns timeline-section">
+    			<div class="three columns">
+    				<h6>EDUCATION</h6>
+    				<div class="resume-large-icon hide-for-small">
+    					<i class="icon-book"></i>
+    				</div>
+    			</div>
+    			
+    			<div class="nine columns resume-entry">
+    				<div class="nine columns">
+    					<span class="resume-title"><i class="icon-certificate">&nbsp;</i>Bachelor of Software Engineering</span><br />
+    					<span class="resume-company"><i class="icon-building">&nbsp;</i>FPT University</span><br />
+    					<br />
+    					<ul>
+    						<li><i class="icon-ok-sign">&nbsp;</i>Faculty of Software Engineering</li>
+    						<li><i class="icon-ok-sign">&nbsp;</i>Concentrated on Information System</li>
+    						
+    					</ul>
+    				</div>
+    				
+    				<div class="three columns text-right">
+    					2007 - 2011
+    				</div>
+    				
+    			</div>
+    			
+
+    		</div>
+    		
+    		<div class="button right">
+    			<i class="icon-download-alt left">&nbsp;</i><span class="left">Download Resume</span>
+    		</div>
+    	
+    	</section><!-- end of Resume -->
+    	
+    	
+    	<section class="row divider text-center">
+    			<h1 class="icon-comment"></i><br />
+    			<h3>
+    				Software entities should be open for extension, but closed for modification
+    			</h3>
+    			<h4><em>- Open/close principle</em></h4>
+    	</section>
+    	
+    	
+    	<a id="contact-nav"></a>
+
+    	
+    	<section class="row page" id="contact">
+    	
+    		<div class="twelve columns">
+    			<h5 class="page-heading">CONTACT</h5>
+    			<hr />
+    		</div>
+    	
+    		<div class="twelve columns">
+    		
+    			<div class="five columns" id="contact-left">
+    				<div id="contact-icon">
+    					<i class="icon-bullhorn"></i>
+    				</div>
+    				<h4>Feel free to drop me a line!</h4>
+    				<hr />
+    				<ul>
+    					<li><span class="label contact-detail"><i class="icon-phone">&nbsp;</i>+84 98 6116 323</span></li>
+    					<li><span class="label contact-detail"><i class="icon-envelope">&nbsp;</i>long@leconglong.com</span></li>
+    					<li><span class="label contact-detail"><i class="icon-map-marker">&nbsp;</i>Dist. 2, Ho Chi Minh City</span></li>
+    					<li><span class="label contact-detail"><i class="icon-facebook">&nbsp;</i>leconglong</span></li>
+
+    				</ul>
+    				
+    			</div>
+    			
+    			<div class="seven columns">
+    				<span class="label contact-detail right"><i class="icon-envelope-alt">&nbsp;</i>Send me a message:</span>
+    				<div id="form-sent" class="hide left">	
+					  	<div class="alert-box success"><i class="icon-thumbs-up">&nbsp;</i>Message sent: Thankyou for your enquiry</div>
+					  </div>
+    				<form id="contact-form">
+					  <input id="form-name" type="text" placeholder="Name" />
+					  <input id="form-email"  type="text" placeholder="Email Address" />
+					  <textarea id="form-msg"  placeholder="Message"></textarea>
+					  <div id="details-error-wrap"  class="hide">	
+					  	<div class="alert-box alert error-box"><i class=" icon-exclamation-sign">&nbsp;</i>Error: Please ensure all fields are filled in correctly</div>
+					  </div>	
+					  <input id="form-security" type="text" placeholder="7 + 1 = ?" />
+					  <div id="security-error-wrap"  class="hide">	
+					  	<div class="alert-box alert error-box"><i class=" icon-exclamation-sign">&nbsp;</i>Error: Security question is incorrect</div>
+					  </div>	
+					  <input type="submit" class="form-button button right" />
+					  
+					</form>
+					
+    			</div>
+    			
+    		</div>
+    		
+    	</section><!-- end of Contact -->
+    	
+  	</div>
+  </div><!-- end of Main Container -->
+  
+
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  <script src="javascripts/scripts.js"></script>
+  <script src="javascripts/jquery.tooltipster.js"></script>
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit({
+      	directionalNav: false,
+      });
+      
+      $("#project-1-slideshow").orbit({
+      	directionalNav: false,
+      });
+      
+    });
+    </script> 
+  
+</body>
 </html>
