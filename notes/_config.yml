@@ -2,7 +2,7 @@
 title: Notes by Le Cong Long
 email: long@leconglong.com
 description: "Articles, notes, collections & bookmarks by Long. Hope you find things that serve you the best here."
-baseurl: ""
+baseurl: "/notes"
 url: "http://leconglong.com"
 
 # Build settings
