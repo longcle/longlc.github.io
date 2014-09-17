@@ -177,7 +177,10 @@ function FindProxyForURL(url, host){
     return netflix_proxies;
   }
   if(['AD','AU','AT','BE','DK','FO','FI','FR','DE','IE','IT','LI','LU','LV','MX','MC','NL','NZ','NO','PL','PT','ES','SE','CH','GB','US','HK','EE','LT','MY','SG','IS'].indexOf(country) === -1){
-    if((/^([\w\.-]+\.)?spotify\.com/).test(host)){
+    if((/^([\w\.-]+\.)?spotify\.com/).test(host) ||
+        (/^78\.31\.8\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))$/).test(host) ||
+        (/^78\.31\.12\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))$/).test(host) ||
+        (/^193\.182\.8\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))$/).test(host)){
       return 'PROXY '+p[2]+':80';
     }
   }
