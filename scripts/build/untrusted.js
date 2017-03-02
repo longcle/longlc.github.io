@@ -163,7 +163,7 @@ function playIntro(display, map, i) {
         display.drawText(13, i + 10, "Let's play a geeky game");
         display.drawText(10, i + 12, "%c{#0f0}[ THE ADVENTURE OF DR. EVAL ]");
         display.drawText(12, i + 18, "%c{#ff0}Press any key to begin ...");
-        display.drawText(8, i + 24, "(c) Alex Nisnevich & Greg Shuflin");
+        display.drawText(8, i + 24, "%c{#515151}(c) Alex Nisnevich & Greg Shuflin");
         setTimeout(function () {
             display.playIntro(map, i - 1);
         }, 100);
