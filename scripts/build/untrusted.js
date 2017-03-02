@@ -372,7 +372,7 @@ function Game(debugMode, startLevel) {
         if (movingToNextLevel) {
             // save level state and create a gist
             editor.saveGoodState();
-            editor.createGist();
+            // editor.createGist();
         }
 
         game._currentLevel = levelNum;
@@ -1042,29 +1042,29 @@ function CodeEditor(textAreaDomID, width, height, game) {
         }));
     }
 
-    this.createGist = function () {
-        var lvlNum = game._currentLevel;
-        var filename = 'untrusted-lvl' + lvlNum + '-solution.js';
-        var description = 'Solution to level ' + lvlNum + ' in Untrusted: http://alex.nisnevich.com/untrusted/';
-        var data = {
-            'files': {},
-            'description': description,
-            'public': true
-        };
-        data['files'][filename] = {
-            'content': this.getCode(true).replace(/\t/g, '    ')
-        };
+    // this.createGist = function () {
+    //     var lvlNum = game._currentLevel;
+    //     var filename = 'untrusted-lvl' + lvlNum + '-solution.js';
+    //     var description = 'Solution to level ' + lvlNum + ' in Untrusted: http://alex.nisnevich.com/untrusted/';
+    //     var data = {
+    //         'files': {},
+    //         'description': description,
+    //         'public': true
+    //     };
+    //     data['files'][filename] = {
+    //         'content': this.getCode(true).replace(/\t/g, '    ')
+    //     };
 
-        $.ajax({
-            'url': 'https://api.github.com/gists',
-            'type': 'POST',
-            'data': JSON.stringify(data),
-            'success': function (data, status, xhr) {
-                $('#savedLevelMsg').html('Level ' + lvlNum + ' solution saved at <a href="'
-                    + data['html_url'] + '" target="_blank">' + data['html_url'] + '</a>');
-            }
-        });
-    }
+    //     $.ajax({
+    //         'url': 'https://api.github.com/gists',
+    //         'type': 'POST',
+    //         'data': JSON.stringify(data),
+    //         'success': function (data, status, xhr) {
+    //             $('#savedLevelMsg').html('Level ' + lvlNum + ' solution saved at <a href="'
+    //                 + data['html_url'] + '" target="_blank">' + data['html_url'] + '</a>');
+    //         }
+    //     });
+    // }
 
     this.getGoodState = function (lvlNum) {
         return JSON.parse(localStorage.getItem(game._getLocalKey('level' + lvlNum + '.lastGoodState')));
