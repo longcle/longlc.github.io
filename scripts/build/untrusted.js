@@ -159,11 +159,11 @@ function playIntro(display, map, i) {
         if (typeof i === 'undefined') { i = map.getHeight(); }
         display.clear();
         display.drawText(0, i - 2, "%c{#0f0}> initialize");
-        display.drawText(15, i + 3, "U N T R U S T E D");
-        display.drawText(20, i + 5, "- or - ");
-        display.drawText(5, i + 7, "THE CONTINUING ADVENTURES OF DR. EVAL");
-        display.drawText(3, i + 12, "a game by Alex Nisnevich and Greg Shuflin");
-        display.drawText(10, i + 22, "Press any key to begin ...");
+        display.drawText(9, i + 3, "Aloha! Welcome to %c{#0095da}LeCongLong.com");
+        display.drawText(13, i + 10, "Let's play a geeky game");
+        display.drawText(10, i + 12, "%c{#0f0}[ THE ADVENTURE OF DR. EVAL ]");
+        display.drawText(12, i + 18, "%c{#ff0}Press any key to begin ...");
+        display.drawText(8, i + 24, "(c) Alex Nisnevich & Greg Shuflin");
         setTimeout(function () {
             display.playIntro(map, i - 1);
         }, 100);
