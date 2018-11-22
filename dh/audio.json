@@ -1,7 +1,7 @@
 {
   "src": [
-    "audio.ogg.nouse",
-    "audio.mp3.nouse"
+    "audio.ogg",
+    "audio.mp3"
   ],
   "sprite": {
     "barkDucks": [
